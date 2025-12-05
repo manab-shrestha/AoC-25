@@ -1,0 +1,13 @@
+# Executables
+*.out
+*.exe
+*.o
+*.obj
+x
+
+# Backup/editor files
+*.swp
+*.tmp
+
+# MacOS metadata
+.DS_Store

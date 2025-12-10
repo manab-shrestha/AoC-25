@@ -186,7 +186,7 @@ long long edgeFinder(int r, int c,
   }
 
   long long count{0};
-  std::size_t x = nodeLoc[r][c];
+  std::size_t x{nodeLoc[r][c]};
 
   for (int dx : {-1, 1}) {
     long long target{static_cast<long long>(x) + dx};
@@ -225,7 +225,7 @@ long long countTimelines(const std::vector<std::vector<std::size_t>> &nodeLoc) {
     memo[r].assign(nodeLoc[r].size(), -1);
   }
 
-  long long total = 0;
+  long long total{0};
   for (int c{0}; c < static_cast<int>(nodeLoc[0].size()); ++c) {
     total += edgeFinder(0, c, nodeLoc, memo);
   }
